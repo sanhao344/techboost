@@ -14,4 +14,10 @@ class Profile extends Model
         'hobby' => 'required',
         'introduction' => 'required',
     );
+
+    public function prhistories()
+    {
+      return $this->hasMany('App\Prhistory');
+
+    }
 }
